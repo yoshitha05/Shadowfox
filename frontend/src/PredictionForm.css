@@ -1,0 +1,41 @@
+/* Small, non-invasive styles for the prediction form component */
+.prediction-root {
+  font-family: Inter, Roboto, -apple-system, "Segoe UI", "Helvetica Neue", Arial;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 8px 30px rgba(16, 24, 40, 0.08);
+}
+
+/* Make labels bold and pure black */
+.controls-grid .MuiTypography-root,
+.controls-grid label {
+  font-weight: 800;
+  color: #000; /* pure black */
+}
+
+.predict-button {
+  border-radius: 10px !important;
+  box-shadow: 0 6px 18px rgba(25, 118, 210, 0.18);
+  text-transform: none !important;
+}
+
+.prediction-result {
+  background: linear-gradient(90deg, rgba(56, 142, 60, 0.08), rgba(56, 142, 60, 0.02));
+  padding: 10px 16px;
+  border-radius: 8px;
+}
+
+.controls-grid .MuiSlider-root {
+  margin-top: -6px;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    padding: 18px;
+    margin: 0 6px;
+  }
+}
